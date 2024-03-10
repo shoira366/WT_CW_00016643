@@ -1,0 +1,108 @@
+:root {
+  --bs-font-sans-serif: "Rubik", sans-serif;
+}
+
+.container-xxl {
+  max-width: 1530px;
+}
+
+a {
+  color: var(--bs-dark);
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Advent Pro";
+  font-weight: bold;
+}
+
+blockquote {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  width: 610px;
+  margin-bottom: 20px;
+  font-family: "Advent Pro";
+}
+
+#form {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  background: #ffffff;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  outline: none;
+}
+
+.selecttype {
+  padding: 16px 82px 16px 81px;
+  margin-right: 35px;
+}
+
+.select-filt {
+  padding: 16px 80px;
+  margin-right: 35px;
+}
+
+.inputsec {
+  max-width: 100%;
+  padding: 16px 30px;
+  margin-right: 35px;
+}
+.inputsec::placeholder {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.btn {
+  padding: 16px 64px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid white;
+}
+
+.category_link {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  transition: 250ms all;
+}
+
+.category_link:hover {
+  transform: scale(1.1);
+}
+
+.category_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.category_image img {
+  width: 100%;
+  object-fit: cover;
+}
