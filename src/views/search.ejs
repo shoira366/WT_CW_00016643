@@ -1,0 +1,17 @@
+<h1 class="pb-4">Search Results</h1>
+
+<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+    <% if(search != "") { %>
+    <% search.forEach(function(recipe, index) { %>
+    <a href="/recipe/<%= recipe.id %>" class="col text-center category_link">
+        <div class="category_image category_image--large shadow">
+            <img src="/img/<%- recipe.image %>" alt="<%- recipe.name %>" loading="lazy">
+        </div>
+        <p class="pt-1"><%= recipe.name %></p>
+    </a>
+    <% }) %>
+    <% } else { %>
+    <p>No item found</p>
+    <% } %>
+</div>

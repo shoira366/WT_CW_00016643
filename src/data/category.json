@@ -1,32 +1,32 @@
 [
-    {
-        "id": "HV0G",
-        "title": "Italian food",
-        "image": "italian-food.jpg"
-    },
-    {
-        "id": "hfWh",
-        "title": "Chinese food",
-        "image": "chinese-food.jpg"
-    },
-    {
-        "id": "GYFy",
-        "title": "Korean food",
-        "image": "korean-food.jpg"
-    },
-    {
-        "id": "zDy4",
-        "title": "Mexican food",
-        "image": "mexican-food.jpg"
-    },
-    {
-        "id": "pKlZ",
-        "title": "Turkish food",
-        "image": "turkish-food.jpg"
-    },
-    {
-        "id": "nJSG",
-        "title": "Thai food",
-        "image": "thai-food.jpg"
-    }
+  {
+    "id": "HV0G",
+    "title": "Italian",
+    "image": "italian-food.jpg"
+  },
+  {
+    "id": "hfWh",
+    "title": "Chinese",
+    "image": "chinese-food.jpg"
+  },
+  {
+    "id": "GYFy",
+    "title": "Korean",
+    "image": "korean-food.jpg"
+  },
+  {
+    "id": "zDy4",
+    "title": "Mexican",
+    "image": "mexican-food.jpg"
+  },
+  {
+    "id": "pKlZ",
+    "title": "Turkish",
+    "image": "turkish-food.jpg"
+  },
+  {
+    "id": "nJSG",
+    "title": "Thai",
+    "image": "thai-food.jpg"
+  }
 ]

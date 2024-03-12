@@ -2,20 +2,37 @@
 
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/api">Home</a></li>
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/categories">Categories</a></li>
         <li class="breadcrumb-item active" aria-current="page">Explore Categories</li>
     </ol>
 </nav>
 
 <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mb-4">
-    <% if(categories != "") { %>
+    <% if(typeof categories !== "undefined" && categories.length > 0 ) { %>
     <% categories.forEach(function(category, index) { %>
-    <a href="#" class="col text-center category_link">
-        <div class="category_image shadow">
+    <a href="/category/<%- category.title %>" class="col text-center category_link">
+        <div class="category_image category_image--large shadow">
             <img src="/img/<%- category.image %>" alt="" loading="lazy">
         </div>
         <p class="pt-1"><%- category.title%></p>
     </a>
     <% }) %>
+    <% } %>
+</div>
+
+<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+    <% if(typeof result !== "undefined" && result.length > 0) { %>
+    <% result.forEach(function(recipe, index) { %>
+    <a href="/recipe/<%= recipe.id %>" class="col text-center category_link">
+        <div class="category_image category_image--large shadow">
+            <img src="/img/<%- recipe.image %>" alt="<%- recipe.name %>" loading="lazy">
+        </div>
+        <p class="pt-1"><%= recipe.name %></p>
+    </a>
+    <% }) %>
+    <% } else { %>
+    <p>No item found</p>
     <% } %>
 </div>

@@ -1,6 +1,8 @@
 const FS = require("../lib/fs_deal");
 const category = new FS("../data/category.json");
 const allCategory = JSON.parse(category.read());
+const ranId = require("../lib/ranId");
+const recipeService = require("./recipeService");
 
 module.exports = {
   get() {
@@ -11,10 +13,15 @@ module.exports = {
     return allCategory;
   },
   getById(id) {
-    return allCategory.find((c) => c.id == id);
+    const categById = allCategory.find((c) => c.title == id);
+    const recipeByCateg = recipeService.getByCategory(categById.id);
+    return recipeByCateg;
+  },
+  getId() {
+    return allCategory.find((c) => c.id == "pKlZ");
   },
   create(req) {
-    const id = genRandId(4);
+    const id = ranId(4);
     const { title } = req.body;
     const image = req.file.originalname;
 
@@ -53,16 +60,4 @@ module.exports = {
     allCategory.splice(index, 1);
     category.write(allCategory);
   },
-};
-
-// generate random id inspired by uuid
-let genRandId = (count) => {
-  let result = "";
-  const characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  const charactersLength = characters.length;
-  for (let i = 0; i < count; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-  return result;
 };

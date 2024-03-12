@@ -1,9 +1,11 @@
 const categoryService = require("../services/categoryService");
+const recipeService = require("../services/recipeService");
 module.exports = {
   GET: async (req, res) => {
     try {
       const categories = await categoryService.get();
-      res.render("index", { title: "Homepage", categories });
+      const allFoods = await recipeService.get();
+      res.render("index", { title: "Homepage", categories, allFoods });
     } catch (err) {
       res.status(500).send({ message: err.message || "Error occured" });
     }
@@ -12,6 +14,14 @@ module.exports = {
     try {
       const categories = await categoryService.explore_categ();
       res.render("categories", { title: "Categories", categories });
+    } catch (err) {
+      res.status(500).send({ message: err.message || "Error occured" });
+    }
+  },
+  GET_BY_ID: async (req, res) => {
+    try {
+      const result = await categoryService.getById(req.params.id);
+      res.render("categories", { title: "Categories", result });
     } catch (err) {
       res.status(500).send({ message: err.message || "Error occured" });
     }

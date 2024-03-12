@@ -1,1 +1,71 @@
-[]
+[
+  {
+    "id": "jApF",
+    "name": "Vegetable Stir Fry",
+    "description": "1. Have all the ingredients chopped and ready to toss in the wok / skillet because this recipe moves fast once you start cooking!\r\n\r\n2. Don’t let the veggies cook until floppy and sad. They should be vibrant, just cooked so they don’t have the raw bite to them but they’re still a bit crisp. That’s the point of optimum flavour and nutrition for vegetables!",
+    "ingredients": [
+      "ginger",
+      "buk choy",
+      "garlic",
+      "chinese wine or mirin",
+      "oyster sauce",
+      "sesame",
+      "soy",
+      "pepper",
+      "cornflour"
+    ],
+    "category": "hfWh",
+    "image": "stri-fried-vegetable.jpg"
+  },
+  {
+    "id": "PLVz",
+    "name": "Alfredo",
+    "description": "1. Cook the pasta according to the package instructions.\r\n2. Melt the butter in a large skillet over medium high heat. Add the garlic and cook for 30 seconds, or until fragrant.\r\n3. Pour in the milk and cream. Stir consistently to avoid burning on the bottom of the pan until the mixture comes to a boil. Turn the heat down to medium, and mix in the parmesan cheese, salt, and pepper. Adjust the seasoning to your own taste.\r\n4. Remove the pan from the heat and mix in the cooked pasta until the sauce begins to thicken. Garnish with parsley, and serve.",
+    "ingredients": [
+      "8 ounce pasta",
+      "4 tablespoons butter",
+      "2 gloves garlic",
+      "1½ cups milk",
+      "1 cup heavy cream",
+      "½ cup Parmesan cheese",
+      "¼ teaspoon pepper",
+      "2 tablespoons fresh parsley"
+    ],
+    "category": "HV0G",
+    "image": "alfredo.jpg"
+  },
+  {
+    "id": "lw1x",
+    "name": "Tamales",
+    "description": "1. Gather all ingredients.\r\n2. Make the filling: Place beef, onion, and garlic in a Dutch oven. Add enough water to cover and bring to a boil. Reduce heat to low and simmer until pork is cooked through, about 2 hours.\r\n3. Meanwhile, make chile sauce: Use rubber gloves to remove stems and seeds from chiles. Place chiles in a saucepan with 2 cups water. Simmer, uncovered, for 20 minutes. Remove from heat and cool.\r\n4. Transfer chiles and cooking water to a blender and blend until smooth. Strain mixture into a bowl and stir in salt. Set aside.\r\n5. Shred cooked beef and mix in 1 cup chile sauce. Reserve remaining sauce for serving.",
+    "ingredients": [
+      "1 ¼ pounds beef loin",
+      "1 large onion, halved",
+      "1 clove garlic",
+      "1 (8 ounce) package dried corn husks",
+      "⅔ cup lard",
+      "1 (10.5 ounce) can beef broth, or as needed",
+      "2 cups masa harina",
+      "1 teaspoon baking powder and ½ teaspoon salt",
+      "1 cup sour cream"
+    ],
+    "category": "zDy4",
+    "image": "tamales.jpg"
+  },
+  {
+    "id": "OZqN",
+    "name": "Pide",
+    "description": "1. Mix instant yeast with warm water and sugar – Once mixed, leave it for 10 minutes to bloom, ie. become foamy. This is not a typical step you see in bread-making when using instant yeast. Usually the whole point of instant yeast is that you can add it straight into dough without mixing with warm water and letting it foam first.\r\n\r\n2. But when creating my naan recipe, we found that blooming instant yeast in a warm water and sugar solution first makes flatbreads fluffier and softer. It’s also an excellent safety test to ensure your yeast is still alive. Foamy yeast in water = alive, no foam = dead yeast! That’s right, dried yeast stored in a jar eventually dies (that’s what the expiry means – but actually it starts to degrade well before that). Nothing is worse than discovering your yeast is dead by taking out a cooked bread loaf from the oven that’s rock hard and flat!\r\n\r\nFoam test – So we do our yeast foam test to avoid all this potential heartbreak. This is what it looks like after 10 minutes. Foamy, good!",
+    "ingredients": [
+      "Turkish cheese (substitute mozzarella) or meat",
+      "salt",
+      "oil",
+      "sugar",
+      "yeast",
+      "bread flour",
+      "warm water"
+    ],
+    "category": "pKlZ",
+    "image": "pide.jpg"
+  }
+]
