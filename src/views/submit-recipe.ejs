@@ -52,7 +52,6 @@
                 <div class="col-12">
                     <label for="category">Select Category</label>
                     <select class="form-select form-control" name="category" id="category" aria-label="Category">
-                        <option selected>Select Category</option>
                         <%if(categories != "undefined" && categories.length > 0) { %>
                         <% categories.forEach(function(category, index) { %>
                         <option value="<%-category.id %>"><%- category.title%></option>
