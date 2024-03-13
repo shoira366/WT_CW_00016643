@@ -19,4 +19,4 @@ Application dependencies:
 "multer": "^1.4.5-lts.1"
 }
 Github: https://github.com/shoira366/WT_CW_00016643
-Render: https://wt-cw-00016643.onrender.com
+Render: https://wt-cw-00016643-1.onrender.com/

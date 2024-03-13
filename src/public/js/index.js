@@ -18,7 +18,7 @@ let image = document.querySelector("#image");
 let selectedFile = null;
 
 elForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   const id = elForm.action.split("/")[elForm.action.split("/").length - 1];
 
   const update = async () => {
