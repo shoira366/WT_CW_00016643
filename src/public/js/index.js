@@ -41,7 +41,7 @@ elForm.addEventListener("submit", (e) => {
         throw new Error("Update Failed: " + response.status);
       }
 
-      window.location.href = `http://localhost:3000/recipe/${id}`;
+      window.location.href = `/recipe/${id}`;
     } catch (err) {
       console.error("Error during update:", err);
       // Handle the error appropriately
